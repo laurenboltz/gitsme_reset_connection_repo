@@ -36,7 +36,10 @@ view: crime_copy {
       week,
       month,
       quarter,
-      year
+      year,
+      day_of_week,
+      time_of_day,
+      month_name
     ]
     sql: ${TABLE}.date ;;
   }
