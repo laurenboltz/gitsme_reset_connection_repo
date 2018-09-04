@@ -72,9 +72,10 @@ view: crime_copy {
   }
 
   dimension: location {
-    type: string
-    sql: ${TABLE}.location ;;
-  }
+      type: location
+      sql_latitude: ${latitude} ;;
+      sql_longitude: ${longitude} ;;
+    }
 
   dimension: location_description {
     type: string
@@ -92,6 +93,7 @@ view: crime_copy {
   }
 
   dimension: unique_key {
+    hidden: yes
     type: number
     sql: ${TABLE}.unique_key ;;
   }
@@ -105,7 +107,8 @@ view: crime_copy {
       week,
       month,
       quarter,
-      year
+      year,
+      day_of_week
     ]
     sql: ${TABLE}.updated_on ;;
   }
