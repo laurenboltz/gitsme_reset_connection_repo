@@ -14,7 +14,7 @@ datagroup: lauren_thesis_default_datagroup {
 persist_with: lauren_thesis_default_datagroup
 
 map_layer: neighborhoods {
-  url: "https://wherever.com/my_neighborhoods.json"
+  url: "https://gist.github.com/laurenboltz/53aed4325968c6c3636baa8d71587acc"
 }
 
 explore: crime_copy {
