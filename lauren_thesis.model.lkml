@@ -19,7 +19,7 @@ map_layer: neighborhoods {
 
 explore: crime_copy {
   join: bq_stations {
-    sql_on: ${crime_copy.latitude} = ${bq_stations.latitude} ;;
+    sql_on: ${crime_copy.location} = ${bq_stations.location} ;;
     relationship: one_to_one
     type: left_outer
   }
