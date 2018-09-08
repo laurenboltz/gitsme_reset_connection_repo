@@ -79,6 +79,7 @@ view: crime_copy {
       map_layer_name: neighborhoods
       sql_latitude: ${latitude} ;;
       sql_longitude: ${longitude} ;;
+      value_format: "0.000"
     }
 
   dimension: location_description {
