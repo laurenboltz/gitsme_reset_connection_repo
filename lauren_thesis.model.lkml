@@ -9,11 +9,17 @@ datagroup: lauren_thesis_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+
+
 persist_with: lauren_thesis_default_datagroup
+
+map_layer: neighborhoods {
+  url: "https://wherever.com/my_neighborhoods.json"
+}
 
 explore: crime_copy {
   join: bq_stations {
-    sql_on: ${crime_copy.location} = ${bq_stations.location} ;;
+    sql_on: ${crime_copy.latitude} = ${bq_stations.latitude} ;;
     relationship: one_to_one
   }
 }

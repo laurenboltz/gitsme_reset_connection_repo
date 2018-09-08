@@ -76,6 +76,7 @@ view: crime_copy {
 
   dimension: location {
       type: location
+      map_layer_name: neighborhoods
       sql_latitude: ${latitude} ;;
       sql_longitude: ${longitude} ;;
     }
