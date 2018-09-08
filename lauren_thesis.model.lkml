@@ -21,6 +21,7 @@ explore: crime_copy {
   join: bq_stations {
     sql_on: ${crime_copy.latitude} = ${bq_stations.latitude} ;;
     relationship: one_to_one
+    type: left_outer
   }
 }
 
