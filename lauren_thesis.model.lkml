@@ -11,6 +11,19 @@ datagroup: lauren_thesis_default_datagroup {
 
 persist_with: lauren_thesis_default_datagroup
 
-explore: crime_copy {}
+explore: crime_copy {
+  join: bq_stations {
+    sql_on: ${crime_copy.location} = ${bq_stations.location} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: bq_stations {}
+
+explore: bq_gsod {}
+
+explore: bq_zipcode_county {}
+
+explore: bq_zipcode_facts {}
+
+explore: bq_zipcode_station {}
