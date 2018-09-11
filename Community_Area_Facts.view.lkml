@@ -13,7 +13,7 @@ include: "lauren_thesis.model.lkml"
       label: "Chicago Crime Community Area"
       type: number
     }
-    dimension: count_by_community_area{
+    dimension: count{
       label: "Chicago Crime Count"
       type: number
     }
