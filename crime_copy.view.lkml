@@ -122,6 +122,7 @@ view: crime_copy {
     sql: ${TABLE}.ward ;;
   }
 
+
   dimension: x_coordinate {
     type: number
     sql: ${TABLE}.x_coordinate ;;
