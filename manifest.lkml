@@ -5,4 +5,4 @@ project_name: "lauren_thesis"
 #
 local_dependency: {
 project: "lauren_thesis_weatherblock"
- }
+}
