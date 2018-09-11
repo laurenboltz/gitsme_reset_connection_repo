@@ -125,11 +125,13 @@ view: crime_copy {
 
   dimension: x_coordinate {
     type: number
+    hidden: yes
     sql: ${TABLE}.x_coordinate ;;
   }
 
   dimension: y_coordinate {
     type: number
+    hidden: yes
     sql: ${TABLE}.y_coordinate ;;
   }
 
