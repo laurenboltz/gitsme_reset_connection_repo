@@ -14,7 +14,7 @@ datagroup: lauren_thesis_default_datagroup {
 persist_with: lauren_thesis_default_datagroup
 
 map_layer: neighborhoods {
-  url: "https://raw.githubusercontent.com/laurenboltz/JSON_Stuff/master/ChiCommunityAreas.topoJSON"
+  url: "https://raw.githubusercontent.com/laurenboltz/JSON_Stuff/master/ChicagoNeighborhoods.topoJSON"
 }
 
 explore: crime_copy {}
