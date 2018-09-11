@@ -17,13 +17,7 @@ map_layer: neighborhoods {
   url: "https://raw.githubusercontent.com/laurenboltz/Topo_JSON/master/chicagoneighborhoods.topojson"
 }
 
-explore: crime_copy {
-  join: bq_stations {
-    sql_on: ${crime_copy.location} = ${bq_stations.location} ;;
-    relationship: one_to_one
-    type: left_outer
-  }
-}
+explore: crime_copy {}
 
 explore: bq_stations {}
 
