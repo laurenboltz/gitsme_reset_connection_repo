@@ -142,6 +142,6 @@ view: crime_copy {
 
   measure: count {
     type: count
-    drill_fields: [district, ward, community_area, date_date, primary_type, location, location_description]
+    drill_fields: [community_area, date_date, primary_type, location, location_description]
   }
 }
