@@ -13,13 +13,11 @@ include: "lauren_thesis.model.lkml"
       label: "Chicago Crime Community Area"
       type: number
     }
-    dimension: count {
+    dimension: count_by_community_area{
       label: "Chicago Crime Count"
       type: number
     }
-    dimension: primary_type {
-      label: "Chicago Crime Primary Type"
-    }
+  }
 
   # # You can specify the table name if it's different from the view name:
   # sql_table_name: my_schema_name.tester ;;
@@ -49,7 +47,7 @@ include: "lauren_thesis.model.lkml"
   #   type: sum
   #   sql: ${lifetime_orders} ;;
   # }
-}
+
 
 # view: community_area_facts {
 #   # Or, you could make this view a derived table, like this:
