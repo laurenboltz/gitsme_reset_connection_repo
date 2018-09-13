@@ -39,8 +39,20 @@ explore: crime_copy {
     relationship: many_to_one
     type: left_outer
   }
-}
 
+join: bq_zipcode_station {
+    type: left_outer
+    relationship: one_to_many
+    sql_on: ${bq_zipcode_station.nearest_station_id} = ${bq_stations.station_id} ;;
+  }
+
+join: bq_gsod {
+  type: left_outer
+  relationship: one_to_many
+  sql_on: ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id}
+    and ${bq_gsod.year} = ${bq_zipcode_station.year};;
+}
+}
 
 explore: bq_stations {}
 
