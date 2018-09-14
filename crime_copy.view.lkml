@@ -24,6 +24,7 @@ view: crime_copy {
 
   dimension: community_area {
     type: number
+    html: <a "https://productday.dev.looker.com/dashboards/215?Community%20Area={{value}}&filter_config=%7B%22Community%20Area%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%2223%22%7D,%7B%7D%5D,%22id%22:2%7D%5D%7D">{{ value }} </a> ;;
     sql: ${TABLE}.community_area ;;
     }
 
