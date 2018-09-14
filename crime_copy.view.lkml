@@ -24,8 +24,11 @@ view: crime_copy {
 
   dimension: community_area {
     type: number
+    html:
+    <a href="/dashboards/215?Community%20Area={{ value }}&filter_config=%7B"Community%20Area":%5B%7B"type":"%3D","values":%5B%7B"constant":"{{ value }}"%7D,%7B%7D%5D,"id":5%7D%5D%7D
+    </a> ;;
     sql: ${TABLE}.community_area ;;
-  }
+    }
 
   dimension: neighborhoods {
     case: {
