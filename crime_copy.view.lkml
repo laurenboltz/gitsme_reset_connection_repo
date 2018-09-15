@@ -26,7 +26,7 @@ view: crime_copy {
     type: number
     link: {
       label: "Neighborhood Dashboard"
-      url: "/dashboards/215?communityarea={{value}"}
+      url: "/dashboards/215?communityarea={{value}}"}
       sql: ${TABLE}.community_area ;;
     }
 
