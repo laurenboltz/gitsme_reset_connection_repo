@@ -24,8 +24,10 @@ view: crime_copy {
 
   dimension: community_area {
     type: number
-    html: <a href="/dashboards/215?communityarea={{value}}">{{ value }}</a> ;;
-    sql: ${TABLE}.community_area ;;
+    link: {
+      label: "Neighborhood Dashboard"
+      url: "/dashboards/215?communityarea={{value}"}
+      sql: ${TABLE}.community_area ;;
     }
 
   dimension: neighborhoods {
