@@ -24,7 +24,7 @@ view: crime_copy {
 
   dimension: community_area {
     type: number
-    html: <a href="/dashboards/215?CommunityAreaFilter={{ value }}">{{ value }}</a> ;;
+    html: <a href="/dashboards/215?CommunityAreaFilter={{ value }}&Filter2=filter_value>{{ value }}</a> ;;
       sql: ${TABLE}.community_area ;;
     }
 
@@ -395,6 +395,7 @@ view: crime_copy {
       map_layer_name: neighborhoods
       sql_latitude: ${latitude} ;;
       sql_longitude: ${longitude} ;;
+      drill_fields: [community_area]
     }
 
   dimension: location_description {
