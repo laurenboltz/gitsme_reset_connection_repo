@@ -46,11 +46,11 @@ explore: crime_copy {
     relationship: one_to_many
   }
 
-  join: bq_gsod {
-    sql_on: ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id} ;;
-    type: left_outer
-    relationship: many_to_one
-  }
+#   join: bq_gsod {
+#     sql_on: ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id} ;;
+#     type: left_outer
+#     relationship: many_to_one
+#   }
 
 }
 explore: bq_gsod{}
