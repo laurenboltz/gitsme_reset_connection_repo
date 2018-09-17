@@ -64,7 +64,7 @@ view: crime_copy {
       }
       when: {
         sql: ${TABLE}.community_area = 01 ;;
-        label: "Roscoe Village"
+        label: "Rogers Park"
       }
       when: {
         sql: ${TABLE}.community_area = 02;;
