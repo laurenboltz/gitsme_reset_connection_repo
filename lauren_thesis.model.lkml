@@ -43,7 +43,7 @@ explore: crime_copy {
   join: bq_zipcode_station {
     sql_on: ${bq_zipcode_station.nearest_station_id} = ${bq_stations.station_id} ;;
     type: left_outer
-    relationship: one_to_many
+    relationship: many_to_one
   }
 
 #   join: bq_gsod {
