@@ -27,7 +27,7 @@ view: crime_copy {
     html: <a href="https://productday.dev.looker.com/dashboards/215?Community%20Area={{ value }}">{{ value }}</a>;;
     link: {
       label: "Google Search this Neighborhood!"
-      url: "http://www.google.com/search?q={{ value }}"
+      url: "https://www.google.com/search?q=chicago+community+area+{{ value }}"
       icon_url: "http://google.com/favicon.ico"
     }
     sql: ${TABLE}.community_area;;
