@@ -40,6 +40,11 @@ explore: crime_copy {
     type: left_outer
   }
 
+  join: chicago_neighborhood_crime_rank {
+    sql_on: ${crime_copy.community_area} = ${chicago_neighborhood_crime_rank.crime_copy_community_area};;
+    relationship: one_to_one
+    type: left_outer
+  }
   join: bq_zipcode_station {
     sql_on: ${bq_zipcode_station.nearest_station_id} = ${bq_stations.station_id} ;;
     type: left_outer
