@@ -24,7 +24,7 @@ view: crime_copy {
 
   dimension: community_area {
     type: number
-    html: <a href="/dashboards/215?CommunityAreaFilter={{ value }}&Filter2=filter_value">{{ value }}</a>;;
+    html: <a href="https://productday.dev.looker.com/dashboards/215?Community%20Area={{ value }}">{{ value }}</a>;;
       sql: ${TABLE}.community_area;;
   }
 
