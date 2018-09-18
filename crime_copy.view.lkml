@@ -25,7 +25,12 @@ view: crime_copy {
   dimension: community_area {
     type: number
     html: <a href="https://productday.dev.looker.com/dashboards/215?Community%20Area={{ value }}">{{ value }}</a>;;
-      sql: ${TABLE}.community_area;;
+    link: {
+      label: "Google Search this Neighborhood!"
+      url: "http://www.google.com/search?q={{ value }}"
+      icon_url: "http://google.com/favicon.ico"
+    }
+    sql: ${TABLE}.community_area;;
   }
 
   dimension: neighborhoods {
