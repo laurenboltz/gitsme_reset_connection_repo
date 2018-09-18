@@ -34,6 +34,7 @@ view: crime_copy {
   }
 
   dimension: neighborhoods {
+    html: <img src="https://www.google.com/search?q={{ value }}" /> ;;
     case: {
       when: {
         sql: ${TABLE}.community_area = 08;;
