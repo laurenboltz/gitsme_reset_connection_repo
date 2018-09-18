@@ -33,6 +33,12 @@ view: crime_copy {
     sql: ${TABLE}.community_area;;
   }
 
+  dimension: neighborhood_image {
+    type: string
+    sql: ${TABLE}.neighborhoods;;
+    html: <img src="https://www.google.com/search?q=chicago+{{value}}" /> ;;
+  }
+
   dimension: neighborhoods {
     case: {
       when: {
