@@ -425,8 +425,9 @@ view: crime_copy {
   }
 
   dimension: unique_key {
-    hidden: yes
     type: number
+    primary_key: yes
+    hidden: yes
     sql: ${TABLE}.unique_key ;;
   }
 
