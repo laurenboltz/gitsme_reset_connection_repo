@@ -49,7 +49,7 @@ explore: crime_copy {
 
   join: bq_gsod {
     sql_on: ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id}
-            and ${bq_gsod.year} = ${bq_zipcode_station.year};;
+            and ${bq_gsod.weather_year} = ${crime_copy.date_year};;
     type: left_outer
     relationship: many_to_one
   }
