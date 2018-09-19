@@ -54,4 +54,10 @@ explore: crime_copy {
     relationship: many_to_many
   }
 
+  join: derived_table_1 {
+    sql_on: ${crime_copy.community_area} = ${derived_table_1.community_area} ;;
+    relationship: one_to_one
+    type: left_outer
+  }
+
 }
