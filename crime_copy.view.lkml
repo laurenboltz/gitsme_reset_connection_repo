@@ -474,8 +474,4 @@ view: crime_copy {
     drill_fields: [community_area, date_date, primary_type, location, location_description]
   }
 
-  measure: average_crime_count {
-    type: average
-    drill_fields: [community_area, location, date_date]
-  }
 }
