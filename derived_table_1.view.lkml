@@ -17,6 +17,7 @@ view: derived_table_1 {
   dimension: average_crime_count {
     type: number
     sql: ${TABLE}.average_crimes;;
+    value_format_name: decimal_0
   }
 
   set: detail {
