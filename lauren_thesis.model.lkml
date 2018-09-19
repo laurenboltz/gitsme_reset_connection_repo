@@ -51,48 +51,7 @@ explore: crime_copy {
     sql_on: ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id}
             and ${bq_gsod.weather_date} = ${crime_copy.date_date};;
     type: left_outer
-    relationship: many_to_one
+    relationship: many_to_many
   }
 
 }
-explore: bq_gsod{
-  join: bq_zipcode_station {
-    sql_on:  ${bq_gsod.station_id} = ${bq_zipcode_station.nearest_station_id}
-            and ${bq_gsod.year} = ${bq_zipcode_station.year};;
-    type: left_outer
-    relationship: many_to_one
-  }
-
-  join: bq_stations {
-    sql_on: ${bq_zipcode_station.nearest_station_id} = ${bq_stations.station_id} ;;
-    type: left_outer
-    relationship: many_to_one
-  }
-  join: crime_copy {
-    sql_on: sql_on: ( IF(${crime_copy.latitude}  IS NOT NULL AND ${crime_copy.longitude}  IS NOT NULL, CONCAT(IFNULL
-    (SUBSTR(CAST(${crime_copy.latitude}  AS STRING),0, 5)
-
-    , ''),',',IFNULL(SUBSTR(CAST(${crime_copy.longitude}  AS STRING),0,6), '')), NULL))
-    =
-
-    (IF(${bq_stations.latitude} IS NOT NULL AND ${bq_stations.longitude} IS NOT NULL,
-    CONCAT(IFNULL
-
-    (
-    SUBSTR(CAST(${bq_stations.latitude} AS STRING), 0, 5)
-
-    , ''),',',IFNULL(
-
-    SUBSTR(CAST(${bq_stations.longitude} AS STRING), 0, 6)
-
-    , '')), NULL)) ;;
-    relationship: many_to_one
-    type: left_outer
-  }
-}
-
-explore: bq_stations{}
-
-explore: bq_zipcode_county {}
-
-explore: bq_zipcode_facts {}
