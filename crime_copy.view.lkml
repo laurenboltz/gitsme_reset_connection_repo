@@ -33,9 +33,9 @@ view: crime_copy {
     sql: ${TABLE}.community_area;;
   }
 
-  dimension: neighborhood_image {
+  dimension: community_image {
     type: string
-    sql: ${neighborhoods};;
+    sql: ${community_area};;
     html: <img src=""https://www.flickr.com/photos/144194536@N02/43001331220/in/album-72157695712996120/" title="{{value}}" /> ;;
       }
 
