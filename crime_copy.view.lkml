@@ -36,8 +36,8 @@ view: crime_copy {
   dimension: neighborhood_image {
     type: string
     sql: ${neighborhoods};;
-    html: <img src="https://www.google.com/search?q=chicago+{{value}}" /> ;;
-  }
+    html: <img src=""https://www.flickr.com/photos/144194536@N02/43001331220/in/album-72157695712996120/" title="{{value}}" /> ;;
+      }
 
   dimension: neighborhoods {
     case: {
