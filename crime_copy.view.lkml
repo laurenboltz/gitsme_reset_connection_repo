@@ -324,7 +324,7 @@ view: crime_copy {
       }
       when: {
         sql: ${TABLE}.community_area = 55;;
-        label: "Hegewish"
+        label: "Hegewisch"
       }
       when: {
         sql: ${TABLE}.community_area =70 ;;
