@@ -11,6 +11,12 @@ view: derived_table_1 {
 
   dimension: community_area {
     type: number
+    html: <a href="https://productday.dev.looker.com/dashboards/215?Community%20Area={{ value }}">{{ value }}</a>;;
+    link: {
+      label: "Google Search this Neighborhood!"
+      url: "https://www.google.com/search?q=chicago+community+area+{{ value }}"
+      icon_url: "http://google.com/favicon.ico"
+    }
     sql: ${TABLE}.community_area ;;
   }
 
