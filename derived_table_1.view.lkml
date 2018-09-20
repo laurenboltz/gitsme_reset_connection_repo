@@ -26,6 +26,11 @@ view: derived_table_1 {
     value_format_name: decimal_0
   }
 
+  dimension: crime_risk_rank{
+    type: number
+    sql: ${TABLE}.rank ;;
+  }
+
   set: detail {
     fields: [community_area, average_crime_count]
   }
