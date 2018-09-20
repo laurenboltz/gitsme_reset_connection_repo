@@ -67,11 +67,11 @@ view: crime_copy {
       }
       when: {
         sql: ${TABLE}.community_area = 21;;
-        label: "Avondale: Belmont Gardens, Chicago's Polish Village, Kosciuszko Park, Palmer Square"
+        label: "Avondale: Belmont Gardens, Chicago's Polish Village, Kosciuszko Park"
       }
       when: {
         sql: ${TABLE}.community_area = 22;;
-        label: "Logan Square: Old Town Triangle, Park West, Ranch Triangle, Sheffield Neighbors, Wrightwood Neighbors"
+        label: "Logan Square: Belmont Gardens, Bucktown, Kosciuszko Park, Palmer Square"
       }
       when: {
         sql: ${TABLE}.community_area = 01 ;;
