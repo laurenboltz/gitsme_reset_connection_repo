@@ -35,7 +35,7 @@ view: crime_copy {
 
   dimension: community_image {
     sql: ${community_area};;
-    html: <a href="https://www.flickr.com/photos/1441945{{value}}@N02/" title="{{value}}">></a>;;
+    html: <a href="https://www.flickr.com/photos/1441945{{value}}@N02/" title="{{value}}"></a>;;
       }
 
   dimension: neighborhoods {
