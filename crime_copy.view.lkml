@@ -466,7 +466,7 @@ view: crime_copy {
 
   measure: count {
     type: count
-    drill_fields: [community_area, date_date, primary_type, location, location_description]
+    drill_fields:  [date_date, primary_type, location_description]
   }
 
 }
