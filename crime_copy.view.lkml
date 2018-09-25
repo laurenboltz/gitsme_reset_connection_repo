@@ -31,6 +31,7 @@ view: crime_copy {
       icon_url: "http://google.com/favicon.ico"
     }
     sql: ${TABLE}.community_area;;
+    drill_fields: [community_area]
   }
 
 
@@ -401,7 +402,6 @@ view: crime_copy {
       map_layer_name: neighborhoods
       sql_latitude: ${latitude} ;;
       sql_longitude: ${longitude} ;;
-      drill_fields: [community_area]
     }
 
   dimension: location_description {
@@ -422,7 +422,7 @@ view: crime_copy {
   dimension: unique_key {
     type: number
     primary_key: yes
-    hidden: yes
+    hidden: no
     sql: ${TABLE}.unique_key ;;
   }
 
