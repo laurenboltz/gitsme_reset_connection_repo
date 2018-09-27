@@ -67,3 +67,5 @@ explore: crime_copy {
   }
 
 }
+
+explore: neighborhood_crime_ranks {}
