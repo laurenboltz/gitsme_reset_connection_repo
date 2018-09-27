@@ -65,6 +65,13 @@ explore: crime_copy {
     relationship: one_to_one
     type:left_outer
   }
+
+  join: ten_year_community_crime_rank {
+    sql_on: ${crime_copy.community_area} = ${ten_year_community_crime_rank.community_area} ;;
+    relationship:  one_to_one
+    type: left_outer
+
+  }
 }
 
 explore: neighborhood_crime_ranks {}
