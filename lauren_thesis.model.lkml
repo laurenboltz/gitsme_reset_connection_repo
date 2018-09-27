@@ -60,4 +60,10 @@ explore: crime_copy {
     type: left_outer
   }
 
+  join: neighborhood_crime_ranks {
+    sql_on: ${crime_copy.community_area} = ${neighborhood_crime_ranks.community_area} ;;
+    relationship: one_to_one
+    type:left_outer
+  }
+
 }
