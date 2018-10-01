@@ -35,7 +35,6 @@ AND community_area IS NOT NULL AND community_area > 0 GROUP BY community_area) a
   dimension: number_of_crimes {
     type: number
     sql: ${TABLE}.number_of_crimes ;;
-    value_format: "decimal_0"
   }
 
   dimension: crime_risk_rank{
