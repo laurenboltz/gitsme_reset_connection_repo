@@ -46,5 +46,6 @@ view: events {
   dimension: type_id_divided_by_3 {
     type: number
     sql: ${TABLE}.user_id/3 ;;
+
   }
 }
