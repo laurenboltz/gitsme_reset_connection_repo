@@ -41,4 +41,9 @@ view: events {
     type: count
     drill_fields: [id, users.first_name, users.last_name, users.id]
   }
+
+  ### SME GIT Merge Conflict Test
+  measure: sum {
+    type: sum
+  }
 }
