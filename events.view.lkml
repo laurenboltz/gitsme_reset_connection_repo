@@ -41,4 +41,10 @@ view: events {
     type: count
     drill_fields: [id, users.first_name, users.last_name, users.id]
   }
+
+  ### merge conflict test
+  dimension: type_id_divided_by_3 {
+    type: number
+    sql: ${TABLE}.user_id/3 ;;
+  }
 }
